@@ -22,5 +22,11 @@ export default new Router({
       name: 'servicio',
       component: () => import(/* webpackChunkName: "about" */ './views/Servicio.vue')
     },
+
+    {
+      path: '/fotos/:id',
+      name: 'fotos',
+      component: () => import(/* webpackChunkName: "about" */ './views/Fotos.vue')
+    },
   ]
 })
